@@ -2,40 +2,44 @@
 
 ## Question 1 :
 
-Your task is to create a smart contract "PrimeOwner". You have to first declare a state variable owner. Now,  create two functions 
+Description:
+The contract "PrimeOwner" changes the ownership of the contract to the caller when input number is prime. It also logs an event during this.
+the code starts with defining a function prime which returns true if the number is prime and false if it is not.
+The state variable owner is then declared which stores the current owner of the contract.
+The event ownerChange is emitted whenever the owner changes.
+The function ChangeOwner:It reverts back if the input is less than 1. It then calls the function prime and changes the owner if input is a prime number.
 
-1. A public function which takes an uint input and changes the owner to the address that calls the function if the input is a Prime number. Revert the function call if input is less than 1.
-2. A private function which helps the above function in checking if the number is prime or not.
-
-Lastly, emit an event whenever the “owner” is changed.
 
 ## Question 2 :
 
-Your task is to create a smart contract “EmployeeRegistree”. You have to define a struct “Employee” with properties : **uint ID, string name, string position, uint salary**.
-Now, create a mapping to store Employees by their ID and maintain a state variable to track the ID for the next employee to be added.
-Write four functions : 
-1. **AddEmployee** - takes the required Employee properties(name, position, salary) and adds the Employee to the mapping.
-2. **UpdateEmployee** - takes the input id, updated name, position and salary and updates the same in the mapping.
-3. **GetEmployeeDetails** - takes the input id and returns the Employee’s name, position and salary.
-4. **DeleteEmployee** - takes the input id and deletes the employee from the mapping.
-
-Revert back the function calls whenever the id doesn’t exist (in case of last 3 functions). \
-Emit separate events for the functions that adds or updates or deletes an employee. The event should contain all details of employee. In case of deletion, emit the details of the employee deleted.
+Description:
+The contract EmployeeRegistree deals with the details of employees including four functions.
+The struct Employee consists of the properties: ID , name , position and salary of the employee.
+The mapping EmployeeMap stores employee details by their id.
+State variable NextId keeps track of the next employee to be added.
+There are three events:
+EmployeeAdded: Emitted when a new employee is added.
+EmployeeUpdated: Emitted when an existing employee's details are updated.
+EmployeeDeleted: Emitted when an employee is deleted.
+Then there are four functions: 
+AddEmployee: Adds a new employee to the registry.
+UpdateEmployee: Updates the details of an existing employee.
+GetEmployeeDetails: Retrieves the details of an employee by ID.
+DeleteEmployee: Deletes an employee from the registry.
 
 ## Question 3 :
 
-Your task is to create a smart contract “Library”. First, define a struct “**Book**” with properties : **uint ID, string name, string author, bool isAvailable**.\
-Now, create 2 mappings, one to store books by their id (books), another to store books by their owner address (borrowed_books).\
-Write the following functions : 
-1. **AddBook** - takes the book details(name, author) and adds the book to books mapping.
-2. **BorrowBook** - takes input the book id, checks if the book is available and assigns the book to the user (i.e. adds the book the borrowed_books mapping).
-3. **GetBookDetails** - takes input the book id and returns the book details.
-4. **ReturnBook** - checks if the book was borrowed by the user calling the function or not and takes back the book (i.e. removes it from the mapping borrowed_books).
-
-
-Write a modifier to help check functions if the input book id is valid or not.
-
-You have to create one folder named "FirstName_Roll". In that folder, you have to add three files, one for each question. You can code in Remix IDE and download the file. Also, ensure to update the readme file, the unupadated readme files will not be considered valid. The readme file should contain the description of the code of each question and the screenshots of the function's output deployed in Remix IDE.
+Description: 
+The contract Library maintains collection of books alongwith their availability status.
+Struct Book contains book's id,name,author,availability status.
+First mapping books contains book details by their id and the second mapping stores the ID of the book borrowed by an address.
+State variable nextId keeps track of the next book's id.
+modifier checkId checks if the input book id is valid.
+There are four functions:
+AddBook: Adds a new book to the collection.
+BorrowBook: Allows a user to borrow a book if it's available.
+GetBookDetails: Retrieves the details of a book by its ID.
+ReturnBook: Allows a user to return a borrowed book.
 
 
 
