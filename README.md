@@ -8,6 +8,11 @@ the code starts with defining a function prime which returns true if the number 
 The state variable owner is then declared which stores the current owner of the contract.
 The event ownerChange is emitted whenever the owner changes.
 The function ChangeOwner:It reverts back if the input is less than 1. It then calls the function prime and changes the owner if input is a prime number.
+![Screenshot 2024-06-03 235934](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/d3b1dc19-6e4e-423a-b689-23da491d8181)
+![Screenshot 2024-06-03 235951](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/c4fd8082-fdbe-440e-9eb6-805f5078b99b)
+
+
+
 
 
 ## Question 2 :
@@ -26,6 +31,10 @@ AddEmployee: Adds a new employee to the registry.
 UpdateEmployee: Updates the details of an existing employee.
 GetEmployeeDetails: Retrieves the details of an employee by ID.
 DeleteEmployee: Deletes an employee from the registry.
+![Screenshot 2024-06-03 235727](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/38f6ee8d-9884-4ce8-87f0-405456b1340f)
+![Screenshot 2024-06-03 235739](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/ef607032-4d39-4cc6-ad2f-3ed52257eb55)
+
+
 
 ## Question 3 :
 
@@ -40,6 +49,12 @@ AddBook: Adds a new book to the collection.
 BorrowBook: Allows a user to borrow a book if it's available.
 GetBookDetails: Retrieves the details of a book by its ID.
 ReturnBook: Allows a user to return a borrowed book.
+![Screenshot 2024-06-04 000229](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/80c296d4-eae0-4cbd-94f5-45204665f445)
+![Screenshot 2024-06-04 000244](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/640f56ec-2d73-47d4-842c-5490b29fef10)
+![Screenshot 2024-06-04 000417](https://github.com/DeFi-Unchained-IITK/assignment-2-architag24/assets/169921772/4bcc40a2-b954-4d88-862e-9a28d75aa36b)
+
+
+
 
 
 
